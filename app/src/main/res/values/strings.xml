@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CoupleCalc</string>
+    <string name="txt_test">Welcome</string>
+    <string name="txt_userName">Username</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_forgetPassword">Forget Password?</string>
+    <string name="txt_login">Log In</string>
+</resources>

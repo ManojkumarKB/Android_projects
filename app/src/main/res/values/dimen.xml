@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="_1sdp">1dp</dimen>
+    <dimen name="_loginBtnTop">245dp</dimen>
+    <dimen name="welTxTop">92dp</dimen>
+    <dimen name="welTxLeft">44dp</dimen>
+    <dimen name="welTxRigth">44dp</dimen>
+    <dimen name="usTxTop">95dp</dimen>
+    <dimen name="wlTxSize">65dp</dimen>
+</resources>

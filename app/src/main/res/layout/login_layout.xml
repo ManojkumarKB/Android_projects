@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_image">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdVrLt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"></androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdHtTP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"></androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdVtRt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"></androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdHrBt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"></androidx.constraintlayout.widget.Guideline>
+
+    <TextView
+        android:id="@+id/txWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/welTxTop"
+        android:layout_marginEnd="@dimen/welTxLeft"
+        android:layout_marginRight="@dimen/welTxRigth"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/txt_test"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/wlTxSize"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/gdHrBt"
+        app:layout_constraintEnd_toStartOf="@+id/gdVtRt"
+        app:layout_constraintLeft_toRightOf="@+id/gdVrLt"
+        app:layout_constraintTop_toBottomOf="@id/gdHtTP"
+        android:layout_marginBottom="300dp"></TextView>
+
+    <TextView
+        android:id="@+id/txUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/txt_userName"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/usTxTop"
+        app:layout_constraintBottom_toTopOf="@+id/gdHrBt"
+        app:layout_constraintEnd_toStartOf="@+id/gdVtRt"
+        app:layout_constraintStart_toStartOf="@+id/gdVrLt"
+        app:layout_constraintTop_toTopOf="@+id/gdHtTP"></TextView>
+
+
+    <ImageView
+        android:id="@+id/btnUserName"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/uname"
+
+        app:layout_constraintBottom_toTopOf="@+id/gdHrBt"
+        app:layout_constraintEnd_toStartOf="@+id/gdVtRt"
+        app:layout_constraintStart_toStartOf="@+id/gdVrLt"
+        app:layout_constraintTop_toTopOf="@+id/gdHtTP"
+        android:layout_marginRight="195dp"></ImageView>
+
+    <EditText
+        android:id="@+id/edtxUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorWhite"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/gdHrBt"
+        app:layout_constraintEnd_toStartOf="@+id/gdVtRt"
+        app:layout_constraintStart_toStartOf="@+id/gdVrLt"
+        app:layout_constraintTop_toTopOf="@+id/gdHtTP"
+        android:layout_marginLeft = "65dp"></EditText>
+
+    <TextView
+        android:id="@+id/txPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtxUserName"
+        android:text="@string/txt_password"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gdHrBt"
+        app:layout_constraintEnd_toStartOf="@+id/gdVtRt"
+        app:layout_constraintStart_toStartOf="@+id/gdVrLt"
+        app:layout_constraintTop_toTopOf="@+id/gdHtTP"
+        android:layout_marginTop="110dp"></TextView>
+
+    <ImageView
+        android:id="@+id/btnPassword"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/pwd_image"
+        app:layout_constraintBottom_toTopOf="@+id/gdHrBt"
+        app:layout_constraintEnd_toStartOf="@+id/gdVtRt"
+        app:layout_constraintStart_toStartOf="@+id/gdVrLt"
+        app:layout_constraintTop_toTopOf="@+id/gdHtTP"
+        android:layout_marginRight="195dp"
+        android:layout_marginTop="183dp"></ImageView>
+
+    <EditText
+        android:id="@+id/edtxPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/colorWhite"
+        android:ems="8"
+        android:hint="Enter the password"
+        android:inputType="numberPassword"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="185dp"
+        android:textColorHint="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/gdHrBt"
+        app:layout_constraintEnd_toStartOf="@+id/gdVtRt"
+        app:layout_constraintStart_toStartOf="@+id/gdVrLt"
+        app:layout_constraintTop_toTopOf="@+id/gdHtTP"
+        android:layout_marginLeft = "45dp"></EditText>
+
+    <TextView
+        android:id="@+id/txtFrgt_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_forgetPassword"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        android:layout_marginTop="285dp"
+        app:layout_constraintBottom_toTopOf="@+id/gdHrBt"
+        app:layout_constraintEnd_toStartOf="@+id/gdVtRt"
+        app:layout_constraintStart_toStartOf="@+id/gdVrLt"
+        app:layout_constraintTop_toTopOf="@+id/gdHtTP"
+        android:layout_marginLeft = "75dp"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPurple"
+        android:text="@string/txt_login"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/gdHrBt"
+        app:layout_constraintEnd_toEndOf="@+id/edtxUserName"
+        app:layout_constraintStart_toStartOf="@+id/gdVrLt"
+        app:layout_constraintTop_toTopOf="@+id/gdHtTP"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="74dp"
+        android:layout_marginTop="405dp"></Button>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/gdHtTP"
+        app:layout_constraintBottom_toTopOf="@+id/txWelcome"
+        app:layout_constraintLeft_toRightOf="@+id/gdVrLt"
+        app:layout_constraintRight_toLeftOf="@+id/gdVtRt"
+        android:visibility="invisible" />
+    <TextView
+        android:id="@+id/txtLoginResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/txtFrgt_pwd"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+        app:layout_constraintRight_toLeftOf="@+id/gdVtRt"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toRightOf="@+id/gdVrLt"
+        android:textColor="@color/colorWhite"></TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
