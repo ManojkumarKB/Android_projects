@@ -1,5 +1,6 @@
 package com.example.couplecalc.View
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
@@ -58,6 +59,8 @@ class MainActivity : AppCompatActivity() {
                         Toast.makeText(this, loginrp.value?.user.toString(), Toast.LENGTH_LONG)
                             .show()
                         txtLoginResult.text="Valid Credentials"
+                          val intent = Intent(this@MainActivity, ChoiceCalcActivity::class.java)
+                          startActivity(intent)
                         t="1"
                    }
                     if(t.equals("1")&&loginrp.value!=null)
